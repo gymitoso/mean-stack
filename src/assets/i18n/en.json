@@ -1,0 +1,54 @@
+{
+  "general": {
+    "version": "Version",
+    "user": "User",
+    "password": "Password",
+    "send": "Send",
+    "new": "New",
+    "confirm": "Confirm",
+    "success": "Success",
+    "portuguese": "Portuguese",
+    "english": "English",
+    "ok": "OK",
+    "name": "Name",
+    "cancel": "Cancel",
+    "create": "Create",
+    "add": "Add",
+    "edit": "Edit",
+    "description": "Description"
+  },
+  "paginator": {
+    "of": "of",
+    "items-per-page": "Items per page",
+    "next-page": "Next page",
+    "previous-page": "Previous page"
+  },
+  "login": {
+    "forgot-password": "Forgot your password",
+    "sign-in": "Sign in"
+  },
+  "sidenav": {
+    "users": "Users"
+  },
+  "error": {
+    "field-required": "Required",
+    "field-invalid": "Invalid",
+    "password-size": "Password must be at least 8 characters",
+    "current-password": "Invalid current password",
+    "invalid-confirmation": "Invalid confirmation",
+    "server": "Server error",
+    "invalid-credentials": "Invalid credentials"
+  },
+  "password": {
+    "description": "The password must contain: special character, number, uppercase and lowercase letter",
+    "week": "Week password",
+    "medium": "Medium password",
+    "strong": "Strong password",
+    "updated": "Password updated",
+    "stronger": "Choose a stronger password",
+    "edit": "Edit Password",
+    "new": "New Password",
+    "old": "Old Password",
+    "confirm": "Confirm Password"
+  }
+}

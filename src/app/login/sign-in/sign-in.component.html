@@ -1,0 +1,50 @@
+<form #loginForm="ngForm">
+  <div class="d-flex flex-column mb-1 mt-4">
+    <mat-form-field>
+      <input
+        matInput
+        type="text"
+        name="email"
+        required
+        placeholder="{{ 'general.user' | translate }}"
+        #email="ngModel"
+        [(ngModel)]="credentials.username"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+      />
+      <mat-error *ngIf="email.invalid && (email.dirty || email.touched)">
+        <div *ngIf="email.errors.required">
+          {{ "error.field-required" | translate }}
+        </div>
+        <div *ngIf="email.errors.pattern">
+          {{ "error.field-invalid" | translate }}
+        </div>
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field class="mt-2">
+      <input
+        matInput
+        type="password"
+        name="password"
+        required
+        minlength="4"
+        placeholder="{{ 'general.password' | translate }}"
+        #password="ngModel"
+        [(ngModel)]="credentials.password"
+        (keyup.enter)="loginForm.valid ? login() : false"
+      />
+      <mat-error
+        *ngIf="password.invalid && (password.dirty || password.touched)"
+      >
+        {{ "error.field-required" | translate }}
+      </mat-error>
+    </mat-form-field>
+  </div>
+</form>
+<button
+  mat-raised-button
+  class="mt-4 mb-2 w-100"
+  [disabled]="!loginForm.valid || loading"
+  (click)="login()"
+>
+  {{ "login.sign-in" | translate }}
+</button>

@@ -1,0 +1,25 @@
+{
+    "eslint.workingDirectories": [
+        { "directory": "./server", "changeProcessCWD": true }
+    ],
+    "eslint.run": "onType",
+    "tslint.exclude": ["/server/**"],
+    "[javascript]": {
+        "editor.formatOnSave": false,
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+        "editor.codeActionsOnSave": {
+            "source.fixAll.tslint": false,
+            "source.fixAll.eslint": true
+        }
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "ms-vscode.vscode-typescript-tslint-plugin",
+        "editor.codeActionsOnSave": {
+            "source.fixAll.tslint": true,
+            "source.fixAll.eslint": false
+        }
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
+}

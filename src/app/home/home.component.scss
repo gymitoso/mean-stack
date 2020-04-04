@@ -1,0 +1,42 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.home-route {
+  transition: all 0.5s ease-in-out;
+  padding: 35px 5%;
+}
+
+@media (max-width: 768px) {
+  .home-route {
+    padding: 35px 2%;
+  }
+}
+
+.app-menu {
+  z-index: 5;
+}
+
+.home-sidenav-container {
+  flex: 1;
+}
+
+.active {
+  background: #fafafa 0% 0% no-repeat padding-box;
+  color: #000;
+  .mat-icon {
+    color: #3f51b5;
+  }
+}
+
+.mat-nav-list .mat-list-item {
+  margin: 5px;
+  border-radius: 40px;
+  max-width: -webkit-fill-available;
+}

@@ -1,0 +1,39 @@
+version: "3"
+
+services:
+  mongo-db:
+    image: mongo:4.2.3
+    restart: on-failure
+    volumes:
+      - mean-db:/data/db
+
+  api:
+    build:
+      context: .
+      dockerfile: ./api.Dockerfile
+    image: api
+    expose:
+      - "4000"
+    environment:
+      NODE_ENV: production
+      SERVER_PORT: 4000
+      JWT_SECRET: GenerateASecureKey
+      MONGO_HOST: mongodb://mongo-db/mean
+    restart: always
+    depends_on:
+      - "mongo-db"
+
+  client:
+    build:
+      context: .
+      dockerfile: ./client.Dockerfile
+    image: client
+    ports:
+      - "4000:4200"
+    restart: always
+    depends_on:
+      - "mongo-db"
+      - "api"
+
+volumes:
+  mean-db:

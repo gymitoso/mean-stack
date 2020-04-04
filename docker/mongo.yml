@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  mean-db:
+    image: mongo:4.2.3
+    restart: on-failure
+    ports:
+      - "27018:27017"
+    volumes:
+      - db-vol:/data/db
+
+volumes:
+  db-vol:

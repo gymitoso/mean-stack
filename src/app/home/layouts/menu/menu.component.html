@@ -1,0 +1,24 @@
+<mat-toolbar class="toolbar mat-elevation-z1">
+  <span>
+    <button mat-icon-button (click)="toggleSidenavbar()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </span>
+  <span style="flex-grow: 1;"></span>
+  <span class="mr-2">{{ user.name }}</span>
+  <span>
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Mais opções">
+      <mat-icon class="user-menu">person</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="openPasswordDialog()">
+        <mat-icon>lock</mat-icon>
+        <span>{{ "password.edit" | translate }}</span>
+      </button>
+      <button mat-menu-item (click)="logout()">
+        <mat-icon>exit_to_app</mat-icon>
+        <span>Logout</span>
+      </button>
+    </mat-menu>
+  </span>
+</mat-toolbar>

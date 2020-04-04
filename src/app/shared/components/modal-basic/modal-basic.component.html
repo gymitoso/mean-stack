@@ -1,0 +1,8 @@
+<h1 mat-dialog-title>{{ title | translate}}</h1>
+<div mat-dialog-content [innerHTML]="body | translate:bodyParam"></div>
+<div mat-dialog-actions class="mt-3">
+  <button mat-raised-button class="cancel-button" (click)="onCancel()">{{ 'general.cancel' | translate }}</button>
+  <button mat-raised-button (click)="onConfirm()">
+      {{ 'general.confirm' | translate }}
+  </button>
+</div>

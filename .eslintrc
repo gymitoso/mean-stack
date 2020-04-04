@@ -1,0 +1,48 @@
+{
+    "extends": [
+        "airbnb-base"
+    ],
+    "env": {
+        "browser": true,
+        "node": true,
+        "mocha": true,
+        "es6": true
+    },
+    "rules": {
+        "comma-dangle": [
+            1,
+            "always-multiline"
+        ],
+        "no-underscore-dangle": 0,
+        "max-len": [
+            "error",
+            {
+                "code": 80,
+                "tabWidth": 2,
+                "ignoreComments": true,
+                "ignoreUrls": true,
+                "ignoreStrings": true,
+                "ignoreTemplateLiterals": true,
+                "ignoreRegExpLiterals": true
+            }
+        ],
+        "no-console": "off",
+        "no-continue": "off",
+        "no-multiple-empty-lines": [
+            2,
+            {
+                "max": 1,
+                "maxEOF": 1
+            }
+        ],
+        "prefer-destructuring": [
+            "error",
+            {
+                "object": true,
+                "array": false
+            }
+        ],
+        "react/jsx-filename-extension": "off",
+        "react/jsx-one-expression-per-line": "off"
+    }
+}

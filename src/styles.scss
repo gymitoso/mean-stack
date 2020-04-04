@@ -1,0 +1,68 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+:focus {
+  outline: none;
+}
+
+.warn {
+  color: #f44336;
+  font-size: 12px;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+// Custom style for Material Design
+.mat-simple-snackbar-action {
+  background-color: #3f51b5;
+  button {
+    color: #fff;
+  }
+}
+
+.mat-menu-item {
+  color: #000 !important;
+  .mat-icon {
+    color: #000 !important;
+  }
+}
+
+.mat-sidenav {
+  width: 220px;
+  padding-top: 10px;
+}
+
+.mat-sidenav-content {
+  background: #fafafa;
+}
+
+.mat-raised-button {
+  color: #fff;
+  background: #3f51b5;
+  border-radius: 10px !important;
+}
+
+.cancel-button {
+  color: #000;
+  background: transparent;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.mat-dialog-actions {
+  justify-content: flex-end;
+}
+
+.mat-form-field {
+  padding-bottom: 10px;
+}

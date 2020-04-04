@@ -1,0 +1,56 @@
+{
+  "general": {
+    "version": "Versão",
+    "user": "Usuário",
+    "password": "Senha",
+    "send": "Enviar",
+    "new": "Novo",
+    "confirm": "Confirmar",
+    "success": "Sucesso",
+    "portuguese": "Português",
+    "english": "Inglês",
+    "ok": "OK",
+    "name": "Nome",
+    "cancel": "Cancelar",
+    "create": "Criar",
+    "add": "Adicionar",
+    "edit": "Editar",
+    "actions": "Ações",
+    "description": "Descrição"
+  },
+  "paginator": {
+    "of": "de",
+    "items-per-page": "Itens por página",
+    "next-page": "Próxima página",
+    "previous-page": "Página anterior"
+  },
+  "login": {
+    "forgot-password": "Esqueceu sua senha",
+    "sign-in": "Entrar"
+  },
+  "sidenav": {
+    "users": "Usuários"
+  },
+  "error": {
+    "field-required": "Campo obrigatório",
+    "field-invalid": "Campo inválido",
+    "password-size": "A senha deve ter no mínimo 8 caracteres",
+    "current-password": "Senha atual inválida",
+    "invalid-confirmation": "Confirmação inválida",
+    "server": "Erro no servidor",
+    "invalid-credentials": "Credenciais inválidas",
+    "invalid-form": "Formulário inválido"
+  },
+  "password": {
+    "description": "A senha deve conter: caracter especial, número, letra maiúscula e minúscula",
+    "week": "Senha fraca",
+    "medium": "Senha média",
+    "strong": "Senha forte",
+    "updated": "Senha atualizada",
+    "stronger": "Escolha uma senha mais forte",
+    "edit": "Alterar Senha",
+    "new": "Nova Senha",
+    "old": "Senha Atual",
+    "confirm": "Confirmar Senha"
+  }
+}
