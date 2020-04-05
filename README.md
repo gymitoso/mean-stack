@@ -56,7 +56,7 @@ npm start
 
 Your Angular application runs on port 4200 with the _development_ environment configuration, so in your browser just go to [http://localhost:4200](http://localhost:4200). The Node.js API runs on port 4000, so in your browser just go to [http://localhost:4000/api/health](http://localhost:4000/api/health) and the browser should display 'OK'.
 
-### Running in Production mode
+### Running in Production mode with Docker
 
 To run your application with _production_ environment configuration:
 
@@ -65,6 +65,10 @@ docker-compose up -d --build
 ```
 
 This will setup your Angular and Node.js application in port 4000. This application uses [Nginx](https://www.nginx.com/) to proxy requests in production.
+
+## Linting
+
+This app includes a static code analysis setup with [ESLint](https://eslint.org/). I recommend that you install the relevant IDE extensions for ESLint. Once you do, every time you press save, all your code will be formatted and reviewed for quality automatically. I also set up a git hook to automatically analyze your code before it is committed.
 
 ## Credits
 
